@@ -1,8 +1,9 @@
-# serializers.py
 from rest_framework import serializers
-from .models import Post
+from .models import ToDo
 
-class PostSerializer(serializers.ModelSerializer):
+
+
+class ToDoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Post
-        fields = ['id', 'title', 'content']
+        model = ToDo
+        fields = '__all__'
